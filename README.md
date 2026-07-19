@@ -1,4 +1,4 @@
-# The Boulders Shopping Centre — Concept Redesign
+# The Boulders Shopping Centre Concept Redesign
 
 A student concept redesign of [boulders.co.za](https://boulders.co.za/), the website for
 The Boulders Shopping Centre in Midrand. Built with **React**, **React Router**, and
@@ -8,15 +8,15 @@ The Boulders Shopping Centre in Midrand. Built with **React**, **React Router**,
 > The Boulders Shopping Centre or Redefine Properties.
 
 ## Live site
-**[ADD YOUR DEPLOYED URL HERE]**
+**https://boulders-shopping-centre-2.vercel.app/**
 
 ## Run locally
 ```bash
 npm install
 npm run dev
 ```
-- `npm run build` — production build
-- `npm run lint` — ESLint
+- `npm run build`  production build
+- `npm run lint`  ESLint
 
 ## Pages
 | Route | File | What it does |
@@ -33,13 +33,13 @@ See `BRIEF.md` for the full research and justification. In short:
 | --- | --- |
 | Every page returns near-empty HTML titled "Redefine Retail" — Google shows no description | Real, accurate titles and meta descriptions on every route |
 | Store list is a long unsearchable page | Instant search + category and level filters over the real directory |
-| Mall map is a zoom/pan widget that fails on mobile | Directory grouped and filterable — no pinching |
+| Mall map is a zoom/pan widget that fails on mobile | Directory grouped and filterable no pinching |
 | Trading hours are buried | Live "Open now / Closed" status in the header and on the Visit page |
 | No clear reason to visit the site | The homepage leads with search, not a slogan |
 
 ## Data integrity
-Every fact in this app — the address, phone number, parking count, floor area, trading
-hours, and the tenant list — is taken from the centre's own published information and
+Every fact in this app the address, phone number, parking count, floor area, trading
+hours, and the tenant list is taken from the centre's own published information and
 was checked against the live site before being used here. Nothing is invented.
 
 ## Component structure
