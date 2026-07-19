@@ -1,108 +1,103 @@
-# Company Research & Justification Brief
+# Project Brief: The Boulders Shopping Centre Redesign
 
-<!--
-  HOW TO USE THIS (delete this comment block when you're done):
-  - The [[ YOUR WORDS ]] parts must be written by you — the brief says
-    "clearly and in your own words", and that's what's being marked.
-  - The technical findings under Q4 are objectively verifiable (I checked
-    them), but you should confirm them yourself and add what YOU saw when
-    you opened the site on your phone and laptop.
-  - Add screenshots of the current site to /outreach-proof or a /screenshots
-    folder and reference them — the brief says screenshots are encouraged
-    as evidence.
--->
+**Author:** Kabelo Mathapo  
+**Course:** AI Software Engineering, Melsoft Academy  
+**Company:** The Boulders Shopping Centre  
+**Industry:** Retail and shopping centre  
+**Current website:** https://boulders.co.za/  
+**Live concept:** https://boulders-shopping-centre-2.vercel.app/
 
-## 1. Which company did you choose?
+## 1. Which company did I choose?
 
-**Company:** The Boulders Shopping Centre
-**Industry:** Retail property / shopping centre (managed by Redefine Properties)
-**Current website:** https://boulders.co.za/
-**Location:** Old Pretoria Road, Midrand, Gauteng
+I chose Boulders Shopping Centre, a retail centre on Old Pretoria Road in Midrand. The centre serves shoppers who need groceries, fashion, health and beauty services, food, banking, and other everyday services in one place.
 
-The Boulders is Midrand's oldest and most established shopping centre — roughly 48 600m²
-of retail with over 100 stores, anchored by Pick n Pay, Boxer, Game and the major fashion
-chains, plus free parking for 1 900 cars.
+## 2. How did I find the company?
 
-## 2. How did you find them?
+I chose a business in the Midrand area because I wanted to redesign a place that I could understand from a local customer’s point of view. The Boulders is a recognisable centre in the area, so I could form an opinion based on the tasks a real shopper would try to complete instead of building a fictional business website.
 
-[[ YOUR WORDS — hint: this one is easy and true. It's your local shopping centre; you
-shop there. Say that plainly, and mention that you went looking at their website because
-of the project. ]]
+## 3. Why did I choose this company specifically?
 
-## 3. Why did you choose this company specifically?
+I chose The Boulders because the business has a clear local identity, but its current digital experience does not make the most important customer tasks easy enough. A shopping-centre website should quickly answer four questions: Is the centre open, is a specific store there, what is happening, and how do I get there? This gave me a practical redesign problem with clear improvements that I could demonstrate through code.
 
-[[ YOUR WORDS — you have two genuine reasons, and BOTH are worth saying:
+## 4. Why does the website need a redesign?
 
-   (a) The community/personal one: it's your local centre, the mall you and the people
-       around you actually use.
+### 4.1 The page identity is too generic
 
-   (b) The commercial one: The Boulders is a hub for dozens of independent SMEs —
-       dentists, physios, salons, barbers, optometrists, accountants, small retailers.
-       A centre's website is the shopfront for all of them, so improving it lifts every
-       tenant inside, not just the landlord.
+The retrieved homepage is presented with the generic title “Redefine Retail” instead of leading with The Boulders Shopping Centre. This weakens search visibility and makes the centre feel like a section of a landlord website rather than a destination with its own identity.
 
-   Then close with the honest part: when you actually opened the site properly and
-   looked at it against basic UX principles, it had real problems (see Q4). That's the
-   sentence that turns a strategic pick into a justified one. ]]
+### 4.2 Store discovery needs to be faster
 
-## 4. Why does their website need a redesign?
+A shopper should not have to scan a long directory to find one brand. My redesign adds instant search, category filters, floor filters, sorting, and an open-now option.
 
-### 4.1 The site is effectively invisible to search engines
+### 4.3 Important visit information needs to be visible
 
-This is the most serious issue and it's objectively verifiable:
+Trading hours, address, parking, and accessibility information should be easy to reach from any page. The redesign adds a live centre-status bar and a dedicated visit page.
 
-- Requesting `boulders.co.za` returns almost no HTML — just a page title. All the
-  content is rendered client-side by JavaScript after the page loads.
-- **Every page carries the same title: "Redefine Retail"** — the landlord's name, not
-  the centre's. The homepage, the store list and the mall map are all titled identically.
-- As a direct result, **Google's own search result for the site shows "We cannot provide
-  a description for this page right now"** — for both `/` and `/home/`.
-- There is no meta description and no Open Graph tags, so sharing a link on WhatsApp or
-  Facebook produces a preview that says "Redefine Retail" with no image or description.
+### 4.4 Navigation should work on every screen size
 
-Why this matters commercially: shoppers search "shops at Boulders Midrand" or "Boulders
-trading hours". If the site can't be indexed properly, third-party directories outrank
-the centre's own website for its own name.
+The previous prototype hid its navigation on mobile without replacing it with a mobile menu. The React version includes an accessible responsive menu and consistent navigation across all routes.
 
-### 4.2 [[ YOUR WORDS — what YOU saw. Open the site on your laptop AND phone, then write
-what's actually wrong. Be specific and concrete. Things to look for:
+### 4.5 The content needs clearer calls to action
 
-  - How long does it take before you see anything? (the JS has to load first)
-  - The store list: is it just a long page you have to scroll and read? Can you search it?
-  - The mall map: it's a zoom in / zoom out / pan widget. How does that feel on a phone?
-  - Trading hours: how many clicks to find them? Can you tell if it's open right now?
-  - Does anything overlap, break, or need pinch-zooming on mobile?
-  - Is there a clear call to action, or does the homepage not really have a job?
+Each page now has a specific job. The home page introduces the centre and guides users to the directory, events, or visit information. The directory helps users locate stores. The events page helps people plan a visit. The leasing page helps prospective tenants view concept units and make an enquiry.
 
-  Two or three specific, honest observations here are worth more than a long list of
-  adjectives. Add screenshots as evidence. ]]
+### 4.6 Business claims must be trustworthy
 
-### 4.3 What a modern centre site does that this one doesn't
+The first prototype included figures and testimonials that had not been verified. I removed or labelled these as concept data. A real client should confirm tenant information, event dates, unit availability, rental figures, footfall statistics, contact details, and testimonials before publication.
 
-Compared to peers like Mall of Africa and Sandton City, the current site is missing the
-basics visitors expect: an instantly searchable directory, a clear "open now" status, and
-wayfinding that works on the device people actually arrive with — a phone, in the parking lot.
+## 5. What did I build?
 
-## 5. What I built
+I rebuilt the concept as a Vite React application styled with Tailwind CSS. I focused on the tasks people are most likely to complete on a shopping-centre website:
 
-[[ YOUR WORDS — a short paragraph. What did you prioritise and why? Suggested spine:
-you focused on the three things people actually visit a mall site for — find a shop,
-know if it's open, know where it is — instead of redesigning everything. Mention that
-you kept the centre's earth-toned brand DNA but lifted it to feel more premium. ]]
+- finding a store quickly
+- checking whether the centre or a store is open
+- seeing upcoming activities
+- planning a visit
+- viewing leasing opportunities
 
-The redesign addresses each problem identified above:
+The project uses reusable components for the header, footer, layout, buttons, section headings, cards, and icons. React hooks manage the theme, live South African time, search, filters, sorting, mobile navigation, and form feedback. React Router connects the pages without duplicating layout code.
 
-| Problem | Fix |
+## 6. Design direction
+
+I kept the earth-toned visual character of the original concept and developed it into one consistent system:
+
+- porcelain and bone backgrounds for warmth
+- brass accents for identity and calls to action
+- deep ink surfaces for contrast
+- Unbounded for display headings
+- Inter for readable body copy
+- JetBrains Mono for status labels and data
+- rounded cards, subtle borders, and restrained motion
+
+The visual direction is intended to feel local, modern, and more memorable than a generic corporate mall template.
+
+## 7. How the redesign addresses the problems
+
+| Problem | Solution in the redesign |
 | --- | --- |
-| Empty HTML, no description, titled "Redefine Retail" | Real title, meta description and OG tags |
-| Store list can't be searched | Instant search + category and level filters |
-| Zoom/pan mall map | Level switcher with a readable schematic, no pinching |
-| Hours buried | Live "Open now / Closed" status, today highlighted |
-| Homepage has no clear job | Search is the hero |
+| Generic page identity | Clear Boulders branding, titles, and metadata |
+| Difficult store discovery | Controlled React search, categories, floors, sorting, and open-now filter |
+| Poor mobile navigation | Responsive menu with accessible controls |
+| Important hours buried | Live status bar and dedicated visit page |
+| Repeated page code | Shared React layout and components |
+| Static DOM scripting | React state and derived data |
+| Risky unsupported claims | Removed, softened, or clearly labelled as concept data |
+| Route refresh risk on Vercel | SPA rewrite configuration |
 
-## 6. Note on scope
+## 8. Technical approach
 
-This is a concept redesign built as a learning project. It uses the centre's real tenant
-list, shop numbers and published trading hours so it reflects the actual business rather
-than placeholder content, but it is not affiliated with or endorsed by The Boulders
-Shopping Centre or Redefine Properties.
+- Vite
+- React functional components
+- React hooks
+- React Router
+- Tailwind CSS
+- Responsive layouts for mobile, tablet, and desktop
+- Accessible labels, focus states, landmarks, and controls
+- Local theme persistence
+- Vercel deployment configuration
+
+## 9. Research references
+
+- Official website: https://boulders.co.za/
+- The original Boulders website and the supplied prototype files were used as the starting point for this project.
+
