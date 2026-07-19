@@ -1,4 +1,4 @@
-# Outreach email — draft
+# Outreach email draft
 
 **To:** info@boulders.co.za
 **Subject:** A student concept redesign of the Boulders website
