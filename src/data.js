@@ -1,9 +1,3 @@
-// ============================================================
-// Real data for The Boulders Shopping Centre, Midrand.
-// Verified against the centre's own published store list, mall
-// map, and trading hours. No invented tenants, events, or history.
-// ============================================================
-
 export const centre = {
   name: "The Boulders Shopping Centre",
   address: "Old Pretoria Road, Midrand, Gauteng",
