@@ -31,7 +31,7 @@ See `BRIEF.md` for the full research and justification. In short:
 
 | Problem on the current site | What this redesign does |
 | --- | --- |
-| Every page returns near-empty HTML titled "Redefine Retail" — Google shows no description | Real, accurate titles and meta descriptions on every route |
+| Every page returns near-empty HTML titled "Redefine Retail" Google shows no description | Real, accurate titles and meta descriptions on every route |
 | Store list is a long unsearchable page | Instant search + category and level filters over the real directory |
 | Mall map is a zoom/pan widget that fails on mobile | Directory grouped and filterable no pinching |
 | Trading hours are buried | Live "Open now / Closed" status in the header and on the Visit page |
